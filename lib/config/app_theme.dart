@@ -80,5 +80,8 @@ ThemeData get appTheme {
     iconTheme: IconThemeData(color: AppColors.primary),
     sliderTheme:
         SliderThemeData(thumbColor: AppColors.primary, activeTrackColor: AppColors.primary, inactiveTrackColor: AppColors.primaryContainer),
+    progressIndicatorTheme: ProgressIndicatorThemeData(
+      color: AppColors.primary,
+    ),
   );
 }
