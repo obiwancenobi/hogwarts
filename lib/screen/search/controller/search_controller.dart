@@ -7,6 +7,7 @@ class SearchController extends GetxController {
   @override
   void onInit() {
     characters = Get.arguments as List<Character>;
+    reset();
     super.onInit();
   }
 

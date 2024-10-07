@@ -33,8 +33,13 @@ class CharacterCard extends StatelessWidget {
                 width: double.maxFinite,
                 fit: BoxFit.cover,
                 imageUrl: character.image,
-                progressIndicatorBuilder: (context, url, downloadProgress) => Center(
-                  child: CircularProgressIndicator(value: downloadProgress.progress),
+                placeholder: (context, url) => Container(
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 36),
+                  child: Image(
+                    image: AssetImage(ImageConstants.imgApp),
+                    color: AppColors.primary,
+                  ),
                 ),
                 errorWidget: (context, url, error) => Container(
                   alignment: Alignment.center,
