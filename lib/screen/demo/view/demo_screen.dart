@@ -25,10 +25,12 @@ class _DemoScreenState extends State<DemoScreen> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            Obx(() => Text(
-                  '${controller.count}',
-                  style: Theme.of(context).textTheme.headlineMedium,
-                )),
+            Obx(
+              () => Text(
+                '${controller.count}',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ),
           ],
         ),
       ),

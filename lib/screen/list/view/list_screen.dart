@@ -35,7 +35,7 @@ class ListScreen extends GetView<ListController> {
             onLoading: SizedBox.shrink(),
             onEmpty: SizedBox.shrink(),
             onError: (error) => SizedBox.shrink(),
-          )
+          ),
         ],
       ),
       body: controller.obx(
@@ -50,7 +50,8 @@ class ListScreen extends GetView<ListController> {
                     Pages.detail,
                     arguments: character,
                   );
-                }),
+                },
+              ),
         onLoading: LoadingView(),
         onEmpty: EmptyView(),
         onError: (error) => ErrorView(

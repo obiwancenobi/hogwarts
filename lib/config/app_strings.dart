@@ -19,4 +19,10 @@ mixin AppStrings {
   static const String hogStaff = 'Hogwarts Staff';
   static const String wizard = 'Wizard';
   static const String alive = 'Alive';
+
+  static const String filter = 'Filter';
+  static const String apply = 'Apply';
+  static const String reset = 'Reset';
+  static const String male = 'Male';
+  static const String female = 'Female';
 }

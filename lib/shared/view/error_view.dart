@@ -37,7 +37,7 @@ class ErrorView extends StatelessWidget {
               textAlign: TextAlign.center,
               style: AppTextTheme.subtitleBold.copyWith(color: AppColors.error),
             ),
-          )
+          ),
         ],
       ),
     );

@@ -4,6 +4,7 @@ import 'package:hogwarts/config/app_colors.dart';
 import 'package:hogwarts/config/app_text_theme.dart';
 import 'package:hogwarts/core/navigation/pages.dart';
 import 'package:hogwarts/screen/search/controller/search_controller.dart';
+import 'package:hogwarts/screen/search/view/filter_dialog.dart';
 import 'package:hogwarts/shared/view/character_grid_view.dart';
 import 'package:hogwarts/shared/view/empty_view.dart';
 
@@ -38,14 +39,15 @@ class SearchScreen extends StatelessWidget {
                 },
               ),
               suffixIcon: IconButton(
-                  icon: const Icon(
-                    Icons.clear,
-                    color: AppColors.tertiary,
-                  ),
-                  onPressed: () {
-                    textController.clear();
-                    controller.reset();
-                  }),
+                icon: const Icon(
+                  Icons.clear,
+                  color: AppColors.tertiary,
+                ),
+                onPressed: () {
+                  textController.clear();
+                  controller.reset();
+                },
+              ),
             ),
             onSubmitted: (query) {
               controller.search(query: query);
@@ -55,20 +57,30 @@ class SearchScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.filter_alt_outlined),
-            onPressed: () {},
-          )
+            onPressed: () {
+              FilterDialog.show(
+                context: context,
+                onSelect: (gender) {
+                  controller.search(query: textController.text, gender: gender);
+                },
+              );
+            },
+          ),
         ],
       ),
-      body: Obx(() => controller.resultList.isEmpty
-          ? EmptyView()
-          : CharacterGridView(
-              list: controller.resultList,
-              onTap: (character) {
-                Get.toNamed(
-                  Pages.detail,
-                  arguments: character,
-                );
-              })),
+      body: Obx(
+        () => controller.resultList.isEmpty
+            ? EmptyView()
+            : CharacterGridView(
+                list: controller.resultList,
+                onTap: (character) {
+                  Get.toNamed(
+                    Pages.detail,
+                    arguments: character,
+                  );
+                },
+              ),
+      ),
     );
   }
 }
