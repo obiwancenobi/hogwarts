@@ -2,15 +2,12 @@
 
 A Hogwarts project.
 
-## Getting Started
+## Details
+- [Public API](https://hp-api.onrender.com/api)
+- Build with Android Studio Ladybug
+- Flutter 3.24.3
+- Use [get](https://pub.dev/packages/get) & [Dio](https://pub.dev/packages/dio)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![List](screenshots/list.png)
+![Detail](screenshots/detail.png)
+![Search](screenshots/search.png)
