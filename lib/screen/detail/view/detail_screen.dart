@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:hogwarts/config/app_colors.dart';
 import 'package:hogwarts/config/app_strings.dart';
 import 'package:hogwarts/config/app_text_theme.dart';
+import 'package:hogwarts/config/image_constants.dart';
 import 'package:hogwarts/core/domain/character.dart';
 import 'package:hogwarts/screen/detail/view/detail_item_view.dart';
 import 'package:hogwarts/screen/detail/view/detail_item_view_check.dart';
@@ -38,14 +39,14 @@ class DetailScreen extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Image(
                   width: 500,
-                  image: AssetImage('assets/images/img_app.png'),
+                  image: AssetImage(ImageConstants.imgApp),
                 ),
               ),
               errorWidget: (context, url, error) => Container(
                 alignment: Alignment.center,
                 child: Image(
                   width: 500,
-                  image: AssetImage('assets/images/img_app.png'),
+                  image: AssetImage(ImageConstants.imgApp),
                 ),
               ),
               maxWidthDiskCache: 500,

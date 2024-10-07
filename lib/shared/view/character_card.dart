@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:hogwarts/config/app_colors.dart';
 import 'package:hogwarts/config/app_text_theme.dart';
+import 'package:hogwarts/config/image_constants.dart';
 import 'package:hogwarts/core/domain/character.dart';
 
 class CharacterCard extends StatelessWidget {
@@ -39,7 +40,7 @@ class CharacterCard extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: EdgeInsets.only(bottom: 36),
                   child: Image(
-                    image: AssetImage('assets/images/img_app.png'),
+                    image: AssetImage(ImageConstants.imgApp),
                     color: AppColors.primary,
                   ),
                 ),
