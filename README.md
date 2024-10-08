@@ -10,6 +10,11 @@ A Hogwarts project.
 
 Check web version [here](https://hogwarts-1.web.app)
 
+## Screenshots
+### Web
+![web](screenshots/web.png)
+
+### Mobile
 ![List](screenshots/list.png)
 ![Detail](screenshots/detail.png)
 ![Search](screenshots/search.png)
