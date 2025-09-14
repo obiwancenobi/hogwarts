@@ -146,8 +146,7 @@ We welcome contributions to the Hogwarts Flutter App! Please follow these steps:
 - Ensure cross-platform compatibility
 
 ## 📄 License
-
-This project is licensed under the [LICENSE NAME] License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔮 Future Enhancements
 
